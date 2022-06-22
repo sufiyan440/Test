@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('git checkout') {
             steps {  
-            git branch: 'master', credentialsId: 'Gitcrd', url: 'https://github.com/sufiyan440/Test.git'
+            git credentialsId: 'Gitcrd', url: 'https://github.com/sufiyan440/Test.git'
             }
         }
     }
